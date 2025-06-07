@@ -1,0 +1,67 @@
+.correas {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 10px;
+}
+
+.correa {
+  width: 100%;
+  max-width: 1000px;
+  padding: 20px;
+  border: 5px solid #333;
+  margin: 20px 0;
+  background-color: #f0f0f0;
+  text-align: center;
+  box-sizing: border-box;
+}
+
+.imagen-con-texto {
+  position: relative;
+  width: 100%;
+}
+
+.imagen-con-texto img {
+  width: 100%;
+  height: auto;
+  display: block;
+  border-radius: 10px;
+}
+
+.texto-encima {
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  background-color: rgba(0, 0, 0, 0.6);
+  color: white;
+  padding: 10px;
+  font-weight: bold;
+  border-radius: 5px;
+  font-size: xx-large;
+}
+
+.caption {
+  margin-top: 10px;
+  font-style: italic;
+  font-size: x-large;
+  color: black;
+}
+
+
+@media (max-width: 768px) {
+  .correa {
+    width: 100%;
+    margin: 10px 0;
+    padding: 10px;
+  }
+
+  .texto-encima {
+    font-size: large;
+    padding: 6px;
+  }
+
+  .caption {
+    font-size: 1rem;
+    padding: 0 10px;
+  }
+}
